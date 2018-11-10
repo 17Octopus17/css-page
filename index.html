@@ -1,77 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <title>Document</title>
-  </head>
-    <body>
-      <header class="fixed">
-        <div class="notif">Deze site maakt gebruik van cookies. Ik ga akkoord met deze <a href="">privacy policy</a>&nbsp; &nbsp;<a href="">ok</a></div>
-        <nav>
-          <ul>
-            <li>We make Savourist.</li>
-            <li>Agency</li>
-            <li>Cases</li>
-            <li>Contact</li>
-          </ul>
-        </nav>
-      </header>
-      <section>
-        <h1>We're a creative and strategic branding agency for digital and print.</h1>
-        <br>
-        <img class="arrow" src="images/right-arrow.svg" alt="arrow">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>Landing page</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header-container">
+      <div class="black-header">
+        <h4 class="text-h4">Deze site maakt gebruik va cookies. Ik ga akkoord met deze
+           <span>privacy policy</span><span>ok</span></h4>
+      </div>
+      <div class="white-header">
+        <h3 class="text-h3">We make Savoutist.</h3>
+        <div class="navigation-bar">
+          <input class="nav-burger__checkbox" type="checkbox" id="check" >
+          <label class="nav-burger" for="check"></label>
+          <nav class="mobile-nav">
+            <a href="#" class="mobile-nav__item text-h3">Agency</a>
+            <a href="#" class="mobile-nav__item text-h3">Cases</a>
+            <a href="#" class="mobile-nav__item text-h3">Contact</a>
+          </nav>
+        </div>
+      </div>  
+    </header>
+    <main>
+      <section class="article">
+        <h1 class="text-h1">We're a creative and strategic branding agency for digital and print.</h1>
       </section>
-      <br>
-      <br>
-      <section>
-          <img class="picture" src="images/picture1.png" alt="building">
-          <h2 class="title">FOMU</h2>
-          <img class="arrow-right" src="images/right-arrow.svg" alt="arrow">
+      <section class="arrow-down">
+        <img src="img/black-arrow.svg" alt="black-arrow">
       </section>
-      <section>
-          <img class="picture" src="images/picture2.png" alt="kayaking">
-          <h2 class="title">Kommit</h2>
-          <img class="arrow-right" src="images/right-arrow.svg" alt="arrow">
+      <section class="article-light">
+        <img src="img/screenshot1.png" alt="picture">
+        <div class="article-light__footer">
+          <h3 class="text-h3">FOMU</h3>
+          <img src="img/black-arrow.svg" alt="black-arrow">
+        </div>
       </section>
-      <section>
-          <img class="picture" src="images/picture3.png" alt="Savourist">
-          <h2 class="title">Savourist</h2>
-          <img class="arrow-right" src="images/right-arrow.svg" alt="arrow">
+      <section class="article-light">
+          <img src="img/screenshot2.png" alt="picture">
+        <div class="article-light__footer">
+          <h3 class="text-h3">KOMMIT</h3>
+          <img src="img/black-arrow.svg" alt="black-arrow">
+        </div>
       </section>
-      <br>
-      <br>
-      <br>
-      <section class="gray" >
-        <h3>View more cases</h3>
-        <img class="arrow1" src="images/bigarrow.png" alt="arrow">
+      <section class="article-light">
+          <img src="img/screenshot3.png" alt="picture">
+        <div class="article-light__footer">
+          <h3 class="text-h3">Savourist</h3>
+          <img src="img/black-arrow.svg" alt="black-arrow">
+        </div>
       </section>
-      <br>
-      <section class="black">
-        <div class="main-text">We<br />think.</div>
-        <br>
-        <span>Our agency</span>
-        <img class="warrow" src="images/whitearrow.png" alt="arrow">
+      <section class="view-more">
+        <h3 class="text-h3">View more cases</h3>
+        <img src="img/black-arrow.svg" alt="black-arrow">
       </section>
-      <br>
-      <section class="small-black">
-          <div class="main-text">Get in touch.</div>
-          <br>
-          <br>
-          <span class="contact">Contact us</span>
-          <img class="warrow1" src="images/whitearrow.png" alt="arrow">
-        </section>
-        <section>
-          <div class="privacy">Privacy Policy</div>
-        </section>
-        <footer>
-          <div class="mail">info@wemake.be</div>
-          <div class="country">Nederlands <a href="">English</a></div>
-          
-        </footer>
-    </body>
+      <section class="article-dark">
+        <h1 class="text-h1 tight">We think.</h1>
+        <div class="article-dark__footer">
+          <h3 class="text-h3">Our agency</h3>
+          <img src="img/white-arrow.svg" alt="white-arrow">
+        </div>
+      </section>
+      <section class="article-dark">
+        <h1 class="text-h1">Get in touch.</h1>
+        <div class="article-dark__footer">
+          <h3 class="text-h3">Contact us</h3>
+          <img src="img/white-arrow.svg" alt="white-arrow">
+        </div>
+      </section>
+      <footer class="footer">
+        <h3 class="text-h3">Privacy Policy</h3>
+        <div class="footer-down">
+          <h3 class="text-h3 hover-link"><a href="mailto:info@wemake.be">info@wemake.be</a></h3>
+          <nav>
+            <ul>
+              <li><a href="#" class="text-h3 hover-link">Nederlands</a></li>
+              <li><a href="#" class="text-h3 hover-link">English</a></li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+  </main>
+</div>
+</body>
 </html>
